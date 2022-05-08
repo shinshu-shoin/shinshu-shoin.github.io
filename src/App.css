@@ -3,6 +3,26 @@
   text-align: center;
 }
 
+.bg-invert {
+  background-color: #fef4f4; /* 桜色 */
+}
+
+.bg-footer {
+  background-color: #513743;
+}
+
+.bg-azuki {
+  background-color: #96514d;
+}
+
+.bg-ebizome {
+  background-color: #7a4171;
+}
+
+.li-style-none {
+  list-style-type: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
