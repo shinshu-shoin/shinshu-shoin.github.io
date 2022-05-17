@@ -18,7 +18,10 @@ function App() {
                             <h1>真秀書院</h1>
                         </Col>
                     </Row>
-                    <Nav>
+                    {/* <Nav>
+                        <Nav.Item>
+                            <Nav.Link href="#news">お知らせ</Nav.Link>
+                        </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="#overview">真秀書院について</Nav.Link>
                         </Nav.Item>
@@ -28,42 +31,77 @@ function App() {
                         <Nav.Item>
                             <Nav.Link href="#online">オンライン教室</Nav.Link>
                         </Nav.Item>
-                    </Nav>
+                    </Nav> */}
                 </Container>
             </header>
+
             <main>
-                <Row className="py-3">
-                    <h2 id="overview" className="pb-4">真秀書院について</h2>
-                    <Col>
-                        <Image fluid src="./image/img_01.JPG"/>
-                    </Col>
-                    <Col md="6" sm="12" className="d-flex align-items-center justify-content-center p-3 bg-ebizome text-light">
-                        <div>
-                            <h3>ペン字教室</h3>
-                            <p>PCやスマホが普及した現代でも、文字を書く機会はなくなりません。<br />
-                            そんな普段の字を美しくしたり、綺麗な字を書くことを趣味にしてみませんか？</p>
-                        </div>
-                    </Col>
-                </Row>
-                <Row className="py-3 flex-wrap-reverse">
-                    <Col md="6" sm="12" className="py-3 bg-azuki text-light">
-                        <h3>子どもから大人まで</h3>
-                        <p>当教室では子どもから大人の方まで幅広くお稽古をいたします。<br />
-                        大人の方なら趣味でペン字を始めて作品の出品を目指してみる、<br />お子様であれば普段の漢字ドリルを使って綺麗な字を書く練習をするなど、柔軟に対応いたします。</p>
-                    </Col>
-                    <Col md="6" sm="12">
-                        <Image fluid src="./image/img_02.JPG"/>
-                    </Col>
-                </Row>
-                <Row className="py-3 bg-invert">
-                    <h2 id="classroom" className="pb-4">仙台教室</h2>
-                    <p>仙台市宮城野区教室 最寄りのJR陸前原ノ町駅から徒歩3分</p>
-                </Row>
-                <Row className="py-3">
-                    <h2 id="online" className="pb-4">オンライン教室</h2>
-                    <p>オンラインでも教室を実施</p>
-                </Row>
+                <Container fluid="lg">
+                    <Row className="my-5 px-4">
+                        <h2>お知らせ</h2>
+                        <ListGroup variant="flush">
+                            <ListGroup.Item>
+                                <Row>
+                                    <Col md="2">
+                                        2022/05/12 <span className="badge bg-success">イベント</span>
+                                    </Col>
+                                    <Col>
+                                        5/28(土)に仙台市宮城野区でペン字教室無料体験会を実施します！ 参加希望の場合は<a target="_blank" rel="noreferrer" href="https://forms.gle/EvwyxgAZ39TzkEr87">お問い合わせ<Icon.BoxArrowUpRight /></a>からお問い合わせください。
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                        </ListGroup>
+                    </Row>
+                    <Row className="mt-5">
+                        <h2 id="overview" className="pb-4">真秀書院について</h2>
+                        <Col md="6" sm="12" className="p-0">
+                            <Image fluid src="./image/img_01.JPG"/>
+                        </Col>
+                        <Col md="6" sm="12" className="d-flex align-items-center justify-content-center p-3 bg-ebizome text-light">
+                            <div>
+                                <h3>ペン字教室</h3>
+                                <p>PCやスマホが普及した現代でも、文字を書く機会はなくなりません。<br />
+                                そんな普段の字を美しくしたり、綺麗な字を書くことを趣味にしてみませんか？</p>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row className="flex-wrap-reverse">
+                        <Col md="6" sm="12" className="d-flex align-items-center justify-content-center p-3 bg-azuki text-light">
+                            <div>
+                                <h3>子どもから大人まで</h3>
+                                <p>当教室では子どもから大人の方まで幅広くお稽古をいたします。<br />
+                                大人の方なら趣味でペン字を始めて作品の出品を目指してみる、<br />お子様であれば普段の漢字ドリルを使って綺麗な字を書く練習をするなど、柔軟に対応しております。</p>
+                            </div>
+                        </Col>
+                        <Col md="6" sm="12" className="p-0">
+                            <Image fluid src="./image/img_02.JPG"/>
+                        </Col>
+                    </Row>
+                    <Row className="py-5">
+                        <h2 id="classroom" className="pb-4">仙台教室</h2>
+                        <p>仙台市宮城野区教室 最寄りのJR陸前原ノ町駅から徒歩5分</p>
+                        <p>※ 防犯上の観点から住所は<a target="_blank" rel="noreferrer" href="https://forms.gle/EvwyxgAZ39TzkEr87">お問い合わせ<Icon.BoxArrowUpRight /></a>の際に別途ご連絡いたします。</p>
+                        <p>
+                            教育部<br />
+                            幼稚園〜中学生<br />
+                            お月謝3700円/月〜<br />
+                            一般部<br />
+                            高校生〜社会人<br />
+                            お月謝4700円/月〜
+                        </p>
+                    </Row>
+                    <Row className="py-5 bg-invert">
+                        <h2 id="online" className="pb-4">オンライン教室</h2>
+                        <p>オンラインでも教室を実施</p>
+                        <p>お稽古の詳細についてはお問い合わせください</p>
+                    </Row>
+                    <Row className="py-5">
+                        <h2 id="contact" className="pb-4">お問い合わせ</h2>
+                        <p>お稽古についてのお問い合わせは<a target="_blank" rel="noreferrer" href="https://forms.gle/EvwyxgAZ39TzkEr87">こちら<Icon.BoxArrowUpRight /></a>から</p>
+                    </Row>
+                </Container>
             </main>
+
             <footer className="p-4 bg-footer text-light">
                 <Container>
                     <Row>
@@ -73,9 +111,8 @@ function App() {
                         </Col>
                         <Col>
                             <ul className="li-style-none">
-                                <li><Icon.Twitter /> Twitter</li>
-                                <li><Icon.Instagram /> Instagram</li>
-                                <li><Icon.Mailbox2 /> Mail</li>
+                                <a href="https://www.instagram.com/shinshu.tsubaki/"><li><Icon.Instagram /> Instagram</li></a>
+                                <li><Icon.Mailbox2 /> Mail: shinshu.syoin@gmail.com</li>
                             </ul>
                         </Col>
                     </Row>
