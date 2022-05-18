@@ -84,16 +84,21 @@ function App() {
                         <p>
                             教育部<br />
                             幼稚園〜中学生<br />
-                            お月謝3700円/月〜<br />
+                            お月謝3500円/月〜<br />
                             一般部<br />
                             高校生〜社会人<br />
-                            お月謝4700円/月〜
+                            お月謝4500円/月〜
                         </p>
                     </Row>
                     <Row className="py-5 bg-invert">
                         <h2 id="online" className="pb-4">オンライン教室</h2>
                         <p>オンラインでも教室を実施</p>
-                        <p>お稽古の詳細についてはお問い合わせください</p>
+                        <ul className="mx-auto col-sm-8 col-md-7 li-style-dots">
+                            <li>結婚式などの熨斗のお手本</li>
+                            <li>単発のお稽古</li>
+                            <li>定期的にお稽古をする通信講座 などなど</li>
+                        </ul>
+                        <p>1回のみ、定期的なお稽古などご要望にお答えします。詳細はお問い合わせください</p>
                     </Row>
                     <Row className="py-5">
                         <h2 id="contact" className="pb-4">お問い合わせ</h2>
@@ -112,7 +117,7 @@ function App() {
                         <Col>
                             <ul className="li-style-none">
                                 <a href="https://www.instagram.com/shinshu.tsubaki/"><li><Icon.Instagram /> Instagram</li></a>
-                                <li><Icon.Mailbox2 /> Mail: shinshu.syoin@gmail.com</li>
+                                {/* <li><Icon.Mailbox2 /> Mail: shinshu.syoin@gmail.com</li> */}
                             </ul>
                         </Col>
                     </Row>

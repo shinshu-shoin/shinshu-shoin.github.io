@@ -23,6 +23,10 @@
   list-style-type: none;
 }
 
+.li-style-dots {
+  list-style-type: disc;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
