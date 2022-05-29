@@ -83,7 +83,7 @@ function App() {
                         <p>※ 防犯上の観点から住所は<a target="_blank" rel="noreferrer" href="https://forms.gle/EvwyxgAZ39TzkEr87">お問い合わせ<Icon.BoxArrowUpRight /></a>の際に別途ご連絡いたします。</p>
                         <p>
                             教育部<br />
-                            幼稚園〜中学生<br />
+                            小学生〜中学生<br />
                             お月謝3500円/月〜<br />
                             一般部<br />
                             高校生〜社会人<br />
