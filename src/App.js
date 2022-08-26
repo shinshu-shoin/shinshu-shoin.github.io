@@ -6,7 +6,6 @@ import Image from 'react-bootstrap/Image';
 import * as Icon from 'react-bootstrap-icons';
 
 import './App.css';
-import { ListGroup } from 'react-bootstrap';
 import NewsList from './components/newslist.js';
 
 function App() {
