@@ -1,18 +1,18 @@
 export type Blog = {
   id: string;
-  body: string;
   title: string;
-  tags: Tag[];
-  image: string;
+  content: string;
+  category: Category[];
+  eyecatch: string | null;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
   revisedAt: string;
 };
 
-export type Tag = {
+export type Category = {
   id: string;
-  tag: string;
+  name: string;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
