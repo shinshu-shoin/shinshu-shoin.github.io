@@ -2,7 +2,7 @@ export type Blog = {
   id: string;
   title: string;
   content: string;
-  category: Category[];
+  category: Category;
   eyecatch: string | null;
   createdAt: string;
   updatedAt: string;
