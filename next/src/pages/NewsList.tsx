@@ -21,7 +21,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
 }: Props) => {
   function ArticleList() {
-    if (blogs.length === 0) {
+    if (blogs === undefined) {
       return <div>まだ記事がありません</div>;
     } else {
       return (
